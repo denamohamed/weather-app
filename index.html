@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container navbar navbar-expand-lg">
+            <div class="navbar-brand d-flex">
+                <img src="./images/logo2x.png" class="me-3 logo-img">
+                <div>
+                    <h2 class=" fs-6 fw-bold text-white">Weather</h2>
+                    <p class="text-white">tagline goes here</p>
+                </div>
+            </div>
+            <div class="ms-auto">
+                <ul class="navbar-nav me-auto my-auto mb-lg-0">
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white px-4 active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white px-4" href="#">News</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white px-4"  href="#">Live Cameras</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white px-4"  href="#">Photos</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white px-4"  href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+      <div class="app-container">
+        <div class="container px-3 py-5 text-center">
+            <!--Search Input-->
+            <div class="my-5">
+                <input type="text" class="w-100 mx-auto rounded-5 py-3 px-4 bg-main-color text-white position-relative"
+                placeholder="Find your location..." id="search" />
+                <button type="button" class="btn btn-primary mb-3 px-4 py-2 rounded-5">Find</button>
+            </div>
+            <div class="row g-0">
+
+                <!--Today Data Section-->
+                <div class="item col-md-4 bg-sec-color m-0 rounded-4">
+                    <div class="d-flex justify-content-between py-2 px-3 bg-main-color text-light rounded-start"id="today-date">
+                        <p id="today_date_day_name" class="my-auto">Friday</p>
+                        <span>
+                            <span id="today_date_day_number" class="my-auto"></span>
+                            <span id="today_date_month" class="my-auto"></span>
+                        </span>
+                    </div>
+                    <div class="item-content text-start px-3 py-3 pt-5 text-light" id="today">
+                        <p id="today_location" class="fs-4"></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-1 fw-bolder">
+                                <span id="today_temp"></span>
+                                <span><sup>o</sup> C</span>
+                            </span>
+                            <img id="today_condition_img" src="./images/116.png" alt="" />
+                        </div>
+                        <p id="today_condition_text" class="fs-6 text-light-blue">sunny</p>
+                    </div>
+                    <div class="item-footer d-flex text-light p-3">
+                        <div class="d-flex me-3">
+                            <img src="images/icon-umberella.png" class="footer-icons me-2" alt="" />
+                            <p id="humidity">20</p>
+                        </div>
+                        <div class="d-flex me-3">
+                            <img src="images/icon-wind.png" class="footer-icons mx-2" alt="" />
+                            <p id="wind">30 km/h</p>
+                        </div>
+                        <div class="d-flex">
+                            <img src="images/icon-compass.png" class="footer-icons mx-2" alt="" />
+                            <p id="wind_direction">NNE</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tomorrow Data Section-->
+                <div class="item col-md-4 m-0 bg-main-color">
+                    <div class="py-2 text-center bg-sec-color text-light" >
+                        <p class="next_day_name my-auto">Friday</p>
+                    </div>
+                    <div class="item-content text-start text-light p-3 text-center pt-5">
+                        <img class="next_condition_img" src="images/113.png" alt="">
+                        <h3>
+                            <span class="next_max_temp"></span>
+                            <span><sup>o</sup> C</span>
+                        </h3>
+                        <h5 class="text-secondary">
+                            <span class="next_min_temp">15</span>
+                            <span><sup>o</sup> C</span>
+                        </h5>
+                        <p class="next_condition_text fs-6 text-light-blue">partly cloudy</p>
+                    </div>
+                </div>
+
+                <!--After Tomorrow Data Section-->
+                <div class="item col-md-4 m-0 bg-sec-color rounded-4">
+                    <div class="py-2 text-center px-3 bg-main-color text-light rounded-end">
+                        <p class="next_day_name my-auto">Friday</p>
+                    </div>
+                    <div class="item-content text-start text-light p-3 text-center pt-5">
+                        <img class="next_condition_img" src="images/113.png" alt="">
+                        <h3>
+                            <span class="next_max_temp"></span>
+                            <span><sup>o</sup> C</span>
+                        </h3>
+                        <h5 class="text-secondary">
+                            <span class="next_min_temp">15</span>
+                            <span><sup>o</sup> C</span>
+                        </h5>
+                        <p class="next_condition_text fs-6 text-light-blue">partly cloudy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="pt-5 mt-5">
+        <div class=" px-5 mt-3">
+            <div class="px-5">
+                <div class="w-100 row my-5 ms-1">
+                    <div class="col-md-8 ps-5">
+                        <input placeholder="Enter your email to subscribe..." class="mx-auto rounded-5 py-3 px-4 bg-main-color text-white position-relative w-75">
+                        <button class="btn btn-primary mb-3 px-4 py-2 rounded-5">Subscribe</button>
+                    </div>
+                    <div class="col-md-4 text-light-blue">
+                        <a><i class="m fa-brands fa-facebook-f"></i></a>
+                        <a><i class="m fa-brands fa-twitter"></i></a>
+                        <a><i class="m fa-brands fa-google-plus-g"></i></a>
+                        <a><i class="m fa-brands fa-pinterest"></i></a>        
+                    </div>
+                </div>
+                <p class="text-white mb-0 pb-5 text-center">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+            </div>
+    </footer>
+
+     <script src="./bundle.min.js"></script>
+    <script src="./weather.js"></script>
+</body>
+</html>

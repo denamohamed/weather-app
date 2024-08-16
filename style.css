@@ -1,0 +1,123 @@
+body
+{
+    background-color: rgb(30, 32, 43);
+}
+
+nav{
+    background-color: #1E202B;
+    width: 100%;
+    padding-block: 20px;
+}
+
+.navbar-nav .nav-link{
+    transition: border 0.5s , color 0.5s;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover{
+    color:#009ad8 !important ;
+    border: #009ad8 2px solid;
+    border-radius: 20px;
+}
+
+img.logo-img{
+    width: 60px;
+    height: 40px;
+}
+
+div.navbar-brand p{
+    font-size: 11px;
+    justify-content: end;
+    line-height: 1;
+}
+
+.logo-img
+{
+    width: 80px;
+    height: 40px;
+}
+
+.app-container button{
+    position: absolute;
+    right: 10%;
+    margin-top: 8px;
+
+}
+
+.small-fs
+{
+    font-size: 10px;
+}
+
+.fs-6
+{
+    font-size: 12px;
+}
+
+.app-container
+{
+    background-image: url(./images/banner.png);
+    background-repeat: no-repeat;
+}
+
+.bg-main-color
+{
+    background-color: rgba(30, 32, 43, 0.905);
+}
+
+.bg-sec-color
+{
+    background-color:#262936d1;
+}
+
+.fs-big
+{
+    font-size: 84px;
+    font-weight: bolder;
+}
+
+.footer-icons
+{
+    width: 20px;
+    height: 20px;
+}
+
+.text-light-blue
+{
+    color:#009ad8;
+}
+
+footer{
+    background-color: #292c38;
+
+}
+
+footer button{
+    position: absolute;
+    margin-top: 8px;
+    left: 42%;
+}
+
+footer div a{
+    background-color: #1E202B;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    transition: all 0.5s;
+}
+
+footer div a:hover{
+    background-color: #009ad8;
+    color: white !important;
+}
+
+footer div a i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
